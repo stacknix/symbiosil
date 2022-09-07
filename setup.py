@@ -3,7 +3,8 @@ from setuptools import setup, find_packages
 with open('requirements.txt') as f:
     requirements = f.readlines()
 
-long_description = 'Symbiosil is open source AI bot framework. Our goal is to make living like symbiosis which can run on any platform and device.'
+long_description = 'Symbiosil is open source AI bot framework. Our goal is to make living like symbiosis which can ' \
+                   'run on any platform and device. '
 
 setup(
     name='symbiosil',
