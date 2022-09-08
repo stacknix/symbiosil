@@ -15,7 +15,7 @@ pip install git+https://github.com/stacknix/symbiosil.git
 Cli through cli command 
 
 ```shell
-python living.py say --text hi 
+python silicon.py say --text hi 
 ```
 
 
