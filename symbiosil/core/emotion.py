@@ -8,11 +8,7 @@ class Emotion(abc.ABC):
         self.genre = genre
 
     @abc.abstractmethod
-    def on_sense(self, senses: tuple):
-        pass
-
-    # emit emotion when detected
-    def emit(self, level, **kwargs):
+    def on_emit(self, senses: tuple):
         pass
 
 
