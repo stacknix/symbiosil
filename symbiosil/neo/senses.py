@@ -16,19 +16,25 @@ SIMPLE_VISION_DATA = (
 
 class SimulatedHearing(Sense):
 
+    def __init__(self, **kwargs):
+        super(SimulatedHearing, self).__init__(SenseType.HEARING, **kwargs)
+
     def on_sense(self, **kwargs):
         while self.alive():
-            time.sleep(random.randint(2, 8))
-            entity = SenseEntity(SenseType.HEARING, random.uniform(0.1, 1.0))
+            time.sleep(random.randint(2, 4))
+            entity = SenseEntity(random.uniform(0.1, 1.0))
             entity.text = random.choice(SIMPLE_HEARING_DATA)
-            yield entity
+            self.emit(entity)
 
 
 class SimulatedVision(Sense):
 
+    def __init__(self, **kwargs):
+        super(SimulatedVision, self).__init__(SenseType.VISION, **kwargs)
+
     def on_sense(self, **kwargs):
         while self.alive():
-            time.sleep(random.randint(2, 8))
-            entity = SenseEntity(SenseType.VISION, random.uniform(0.1, 1.0))
+            time.sleep(random.randint(2, 4))
+            entity = SenseEntity(random.uniform(0.1, 1.0))
             entity.text = random.choice(SIMPLE_VISION_DATA)
-            yield entity
+            self.emit(entity)
