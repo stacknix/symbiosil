@@ -3,3 +3,5 @@ redis==4.3.4
 click==8.1.3
 celery==5.2.7
 tensorflow==2.10.0
+python-Levenshtein==0.12.2
+fuzzywuzzy==0.18.0
