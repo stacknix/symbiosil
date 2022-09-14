@@ -5,3 +5,4 @@ celery==5.2.7
 tensorflow==2.10.0
 python-Levenshtein==0.12.2
 fuzzywuzzy==0.18.0
+uvicorn==0.18.3
