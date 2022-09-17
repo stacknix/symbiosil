@@ -3,7 +3,8 @@ import abc
 
 class Living(abc.ABC):
 
-    def __init__(self, **kwargs):
+    def __init__(self, processor, **kwargs):
+        self.processor = processor
         self.registries = []
         self.on_registry()
 

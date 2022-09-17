@@ -44,11 +44,3 @@ class Sense(abc.ABC):
 
     def alive(self) -> bool:
         return self._alive
-
-
-# this class take all active sense entities and process them
-class SenseProcessor(abc.ABC):
-
-    @abc.abstractmethod
-    def process(self, senses: list):
-        pass
